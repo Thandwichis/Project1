@@ -1,0 +1,174 @@
+/* Color Palette */
+:root {
+    --buckeye-brown: #61574B;
+    --antique-cream: #F5F0E1;
+    --forest-green: #4A6B4F;
+    --deep-burgundy: #7B3F3F;
+    --sky-blue: #A3C6C4;
+  }
+  
+  /* Global Styles */
+  body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: var(--antique-cream);
+    color: var(--buckeye-brown);
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: transparent;
+    padding: 1rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: var(--deep-burgundy);
+    margin-bottom: 0.5rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: var(--deep-burgundy);
+    font-weight: 700;
+  }
+  
+  nav a:hover {
+    color: var(--forest-green);
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: var(--sky-blue);
+    color: var(--buckeye-brown);
+  }
+  
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+  }
+  
+  .hero p {
+    font-size: 1.1rem;
+  }
+  
+  .button {
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: var(--buckeye-brown);
+    color: var(--antique-cream);
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .button:hover {
+    background-color: var(--forest-green);
+  }
+  
+  .intro {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  .intro h2 {
+    font-family: 'Playfair Display', serif;
+    color: var(--deep-burgundy);
+  }
+  
+  footer {
+    background-color: var(--buckeye-brown);
+    color: var(--antique-cream);
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive - Desktop View */
+  @media (min-width: 768px) {
+    .hero h1 {
+      font-size: 3rem;
+    }
+  
+    .intro {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  
+    nav ul {
+      gap: 2rem;
+    }
+  }
+  .rooms {
+    padding: 2rem 1rem;
+    background-color: var(--antique-cream);
+    text-align: center;
+  }
+  
+  .rooms h2 {
+    font-family: 'Playfair Display', serif;
+    color: var(--deep-burgundy);
+    margin-bottom: 1.5rem;
+  }
+  
+  .room-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .room {
+    background-color: #fff;
+    border: 1px solid var(--buckeye-brown);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    padding: 1rem;
+  }
+  
+  .room img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.25rem;
+  }
+  
+  .room h3 {
+    font-family: 'Playfair Display', serif;
+    margin-top: 0.75rem;
+    color: var(--forest-green);
+  }
+  
+  .room p {
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+    color: var(--buckeye-brown);
+  }
+  
+  /* Desktop: 3-column layout */
+  @media (min-width: 768px) {
+    .room-grid {
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  
+    .room {
+      width: 30%;
+      min-width: 250px;
+    }
+  }
+    
