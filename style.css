@@ -171,4 +171,66 @@
       min-width: 250px;
     }
   }
-    
+    /* Contact Page Styles */
+.contact {
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  background-color: var(--antique-cream);
+}
+
+.contact-details {
+  background-color: #fff;
+  border: 1px solid var(--buckeye-brown);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.contact-details p {
+  margin: 0.75rem 0;
+  color: var(--buckeye-brown);
+  font-size: 1rem;
+}
+
+.contact-details strong {
+  color: var(--deep-burgundy);
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+}
+
+iframe {
+  border-radius: 0.5rem;
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Optional: Make it feel warmer with background accent */
+.contact::before {
+  content: "";
+  background: url('leaf-pattern.png'); /* Optional subtle pattern */
+  opacity: 0.05;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+/* Desktop Layout */
+@media (min-width: 768px) {
+  .contact {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+
+  .contact-details {
+    margin-right: 2rem;
+  }
+}
